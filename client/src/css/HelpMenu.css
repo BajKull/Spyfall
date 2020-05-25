@@ -1,0 +1,16 @@
+.HelpMenu {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5vmin;
+}
+
+.HelpMenu p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgb(155, 155, 155);
+}
+

@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(180, 180, 180);
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.4;
+}

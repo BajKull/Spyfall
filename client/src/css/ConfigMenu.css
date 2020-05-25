@@ -1,0 +1,71 @@
+.ConfigMenu {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  margin-top: 5%;
+  font-size: 6.5vh;
+  color: rgb(230, 230, 230);
+  text-shadow: -1px -1px 0 rgb(30, 30, 30), 1px -1px 0 rgb(30, 30, 30), -1px 1px 0 rgb(30, 30, 30), 1px 1px 0 rgb(30, 30, 30);
+}
+
+.Slider {
+  display: inline-block;
+  margin: 25px;
+  width: 100%;
+  z-index: 1;
+}
+
+.Slider p {
+  width: 1vw;
+  float:right;
+  margin-left: 20px;
+  right: 15px;
+}
+
+.Arrows {
+  margin-top: 5vw;
+  width: 85%;
+}
+
+.ConfigSlider {
+  -webkit-appearance: none;
+  float: right;
+  width: 50vw;
+  height: 5vh;
+  background: rgb(150, 150, 150);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 50px;
+}
+
+.ConfigSlider:hover {
+  opacity: 1;
+}
+
+.ConfigSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50px;
+  background: rgb(103, 89, 116);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.25)
+}
+
+.ConfigSlider::-moz-range-thumb {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50px;
+  background: rgb(103, 89, 116);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.25)
+}
+

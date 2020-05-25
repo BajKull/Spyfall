@@ -1,0 +1,10 @@
+.GamePlay {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 7vh;
+  color: rgb(20, 20, 20);
+}

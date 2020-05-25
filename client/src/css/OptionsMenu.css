@@ -1,0 +1,127 @@
+.OptionsMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 4.2vmin;
+}
+
+.Switch {
+  position: relative;
+  display: inline-block;
+  margin-top: 35px;
+  padding-right: 15vmin;
+  width: 80%;
+}
+
+.Switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.SliderCircle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(125, 125, 125);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+  height: 6vmin;
+  width: 12vmin;
+  opacity: 0.7;
+  box-shadow: inset 3px 3px 10px 5px rgba(0, 0, 0, 0.35)
+}
+
+.SliderCircle:hover {
+  opacity: 1
+}
+
+.SliderCircle:before {
+  position: absolute;
+  content: "";
+  height: 4.4vmin;
+  width: 4.4vmin;
+  left: 0.8vmin;
+  bottom: 0.8vmin;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 7px 5px rgba(0, 0, 0, 0.35)
+}
+
+input:checked + .SliderCircle {
+  background-color: rgb(103, 89, 116);
+}
+
+input:checked + .SliderCircle:before {
+  -webkit-transform: translateX(6vmin);
+  -ms-transform: translateX(6vmin);
+  transform: translateX(6vmin);
+}
+
+.OptionSlider {
+  -webkit-appearance: none;
+  margin-left: 3vmin;
+  float: right;
+  width: 60%;
+  height: 6vmin;
+  background: rgb(150, 150, 150);
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 50px;
+  opacity: 0.7;
+}
+
+.OptionSlider:hover {
+  opacity: 1;
+}
+
+.OptionSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 7vmin;
+  height: 7vmin;
+  border-radius: 50px;
+  background: rgb(103, 89, 116);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.OptionSlider::-moz-range-thumb {
+  width: 7vmin;
+  height: 7vmin;
+  border-radius: 50px;
+  background: rgb(103, 89, 116);
+  cursor: pointer;
+  box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.25)
+}
+
+.SoundVal {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  width: 80%;
+}
+
+.SoundVal p {
+  display: inline-block;
+}
+
+.Language {
+  width: 80%;
+}
+
+.Language p {
+  display: inline-block;
+}
+
+
