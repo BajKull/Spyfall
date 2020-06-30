@@ -1,0 +1,284 @@
+.Chat {
+  margin: 50px;
+  width: 60%;
+  height: 50vh;
+  border-radius: 5px;
+}
+
+.MessageList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.MessageList::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 80, 80);
+  border-radius: 5px;
+}
+
+.MessageList::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px; 
+}
+
+.MessageList::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px; 
+}
+
+.UserList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.UserList::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 80, 80);
+  border-radius: 5px;
+}
+
+.UserList::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px; 
+}
+
+.UserList::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 10px; 
+}
+
+.UserList {
+  background: rgb(40, 40, 40);
+  width: 30%;
+  height: 100%;
+  float: left;
+  overflow-y: auto;
+  border-radius: 5px 0 0 5px;
+  border-right: 1px solid rgb(60, 60, 60);
+}
+
+.Username {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 80%;
+  padding-top: 10px;
+}
+
+.Username p {
+  font-size: 20px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  padding-left: 15px;
+}
+
+.MessageList {
+  background: rgb(50, 50, 50);
+  width: 70%;
+  float: right;
+  flex: auto;
+  height: 90%;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  border-radius: 0 5px 0 0;
+}
+
+.UserMessage {
+  position: relative;
+  float: right;
+  width: 70%;
+  height: 10%;
+  background: rgb(60, 60, 60);
+  border-radius: 0 0 5px 0;
+}
+
+.UserMessage input {
+  position: absolute;
+  top: 20%;
+  width: 85%;
+  height: 60%;
+  border: 0;
+  padding-left: 10px;
+  background: rgb(80, 80, 80);
+  color: rgb(240, 240, 240);
+  border-radius: 3px;
+  margin-left: 1.5%;
+  transition: 0.3s;
+}
+
+.UserMessage input:focus {
+  outline: none;
+  background: rgb(40, 40, 40);
+  box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+.UserMessage input::placeholder {
+  color: rgb(235, 235, 235);
+}
+
+.UserMessage button {
+  position: absolute;
+  top: 20%;
+  right: 1.5%;
+  width: 10%;
+  height: 60%;
+  border: 0;
+  color: white;
+  background: rgb(123, 78, 165);
+  border-radius: 3px;
+  transition: 0.3s;
+  float: right;
+}
+
+.UserMessage button:focus {
+  outline: none;
+  box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.25);
+}
+
+@media only screen and (max-width: 1550px) {
+
+  .Room1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .RoomTimer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Chat {
+    height: 35vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-width: 80%;
+    min-height: 35vh;
+  }
+
+  .RoomSettings {
+    width: 70%;
+    margin: 0 15% 0 15%;
+    font-size: 24px;
+  }
+
+  .MultiCode {
+    width: 45%;
+    left: 0;
+    font-size: inherit;
+    height: 55px;
+  }
+
+  .MultiReady {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 45%;
+    height: 55px;
+    font-size: inherit;
+  }
+
+  .MultiNotReady {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    width: 45%;
+    height: 55px;
+    font-size: inherit;
+  }
+
+  .MultiOption p {
+    font-size: inherit;
+  }
+
+  .MarginTop30 {
+    margin-top: 75px !important;
+  }
+
+  .UserMessage input {
+    height: 80%;
+    top: 10%;
+    padding-top: 4px;
+  }
+
+  .UserMessage button {
+    height: 80%;
+    top: 10%;
+  }
+
+  .RoomTimerRight {
+    width: 100% !important;
+    margin-top: -15px !important;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .Chat {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .UserList {
+    display: none !important;
+  }
+
+  .MessageList {
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+    font-size: 12px;
+  }
+
+  .UserMessage {
+    min-width: 100%;
+    height: 15%;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .UserMessage input {
+    width: 80%;
+  }
+
+  .UserMessage button {
+    width: 15%;
+    font-size: 12px;
+  }
+
+  .MultiCode img {
+    visibility: hidden;
+  }
+
+  .Avatar {
+    font-size: 18px !important;
+    min-height: 15vh !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+  }
+
+  .MultiCode {
+    font-size: 12px;
+  }
+
+  .MultiReady {
+    font-size: 12px;
+  }
+
+  .MultiNotReady {
+    font-size: 12px;
+  }
+
+  .MultiOption {
+    font-size: 15px;
+  }
+
+  .RightOption {
+    width: 120px;
+  }
+
+  .MultiBtnVal {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .ValUp {
+    right: 75px;
+  }
+}

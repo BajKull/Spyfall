@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Player from '../components/Player.js'
-import '../../css/Roles.css'
+import './Roles.css'
 
 export class ShowRoles extends Component {
 
@@ -54,7 +54,7 @@ export class ShowRoles extends Component {
       currentPlayer: currentPlayer + 1
     }))
     if(p[cP].role === 'Spy')
-      return ['You are', 'Spy']
+      return [this.props.getText("youAre"), this.props.getText("spy")]
     else
       return [this.state.place.name, p[cP].role]
   }
@@ -72,7 +72,14 @@ export class ShowRoles extends Component {
   render() {
     return (
       <div className="Roles">
-        <Player btnChangeScreen={this.props.btnChangeScreen} gameInit={this.gameInit.bind(this)} newGame={this.props.newGame} startGame={this.props.startGame} getMaxPlayers={this.getMaxPlayers.bind(this)} getPlayerInfo={this.getPlayerInfo.bind(this)} nextPlayer={this.nextPlayer.bind(this)} getText={this.props.getText}/>
+        <Player btnChangeScreen={this.props.btnChangeScreen} 
+          gameInit={this.gameInit.bind(this)} 
+          newGame={this.props.newGame} 
+          startGame={this.props.startGame} 
+          getMaxPlayers={this.getMaxPlayers.bind(this)} 
+          getPlayerInfo={this.getPlayerInfo.bind(this)} 
+          nextPlayer={this.nextPlayer.bind(this)} 
+          getText={this.props.getText}/>
       </div>
     )
   }

@@ -1,0 +1,124 @@
+.DarkButton {
+  background-color: rgb(110, 88, 88);
+  min-width: 40%;
+  color: white;
+  padding: 25px;
+  margin: 5px;
+  display: block;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 5vmin;
+  z-index: 1;
+  -webkit-transition: .2s;
+  transition: background-color .3s;
+}
+
+.DarkButton:hover {
+  background-color: rgb(139, 91, 91);
+}
+
+.LightButton {
+  background-color: rgb(83, 118, 129);
+  margin-top: 5vmin;
+  margin-bottom: 18vmin;
+  min-width: 40%;
+  color: white;
+  padding: 25px;
+  display: block;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 5vmin;
+  z-index: 1;
+  -webkit-transition: .2s;
+  transition: background-color .3s;
+}
+
+.LightButton:hover {
+  background-color: rgb(71, 126, 143);
+}
+
+.LightButton2 {
+  background-color: rgb(83, 129, 85);
+  margin-top: 75px;
+  margin-bottom: 18vmin;
+  min-width: 40%;
+  color: white;
+  padding: 25px;
+  display: block;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 5vmin;
+  z-index: 1;
+  -webkit-transition: .2s;
+  transition: background-color .3s;
+}
+
+.LightButton2:hover {
+  background-color: rgb(77, 163, 83);
+}
+
+.MenuButton {
+  position: relative;
+  background-color: rgb(55, 55, 55);
+  min-width: 600px;
+  color: white;
+  padding: 25px;
+  margin: 10px;
+  display: block;
+  border: 0;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 48px;
+  z-index: 1;
+  -webkit-transition: .2s;
+  transition: background-color .3s;
+}
+
+.MenuButton:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+
+.ArrowButton {
+  background-color: rgb(55, 55, 55);
+  min-width: 10%;
+  color: white;
+  display: block;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 4.2vmin;
+  z-index: 1;
+  -webkit-transition: .2s;
+  transition: background-color .3s;
+  float: right;
+  height: 6vmin;
+  padding: 0;
+  margin: 0;
+}
+
+.ArrowButton:hover {
+  background-color: rgb(75, 75, 75);
+}
+
+@media only screen and (max-width: 700px) {
+  .MenuButton {
+    min-width: 80%;
+    font-size: 18px;
+  }
+
+  .LightButton {
+    min-width: 50%;
+  }
+
+  .LightButton2 {
+    min-width: 50%;
+  }
+
+  .DarkButton {
+    min-width: 50%;
+  }
+}

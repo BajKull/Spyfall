@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import '../../css/OptionsMenu.css'
+import './OptionsMenu.css'
 
 export class OptionsMenu extends Component {
 
   constructor(props) {
     super(props)
-    const {soundVolume, language} = this.props.getOptions()
+    const {soundVolume, language, screenSleep} = this.props.getOptions()
     this.state = {
       sliderVal: soundVolume,
       lang: language,
+      screenSleep: screenSleep
     }
   }
 
@@ -19,7 +20,7 @@ export class OptionsMenu extends Component {
   }
 
   goBack() {
-    this.props.setOptions(this.state.sliderVal, this.state.lang)
+    this.props.setOptions(this.state.sliderVal, this.state.lang, this.state.screenSleep)
     this.props.btnChangeScreen("menu")
   }
 
@@ -36,12 +37,23 @@ export class OptionsMenu extends Component {
       })
   }
 
+  changeSleep() {
+    this.setState(({screenSleep}) => ({
+      screenSleep: !screenSleep
+    }))
+  }
+
+  componentDidMount() {
+    if(this.state.screenSleep)
+      document.getElementsByClassName("changeSleepBox")[0].checked = true
+  }
+
   render() {
     return (
       <div className="OptionsMenu">
         <label className="Switch">
           <p> {this.props.getText("preventScreenSleep")} </p>
-          <input type="checkbox" />
+          <input className="changeSleepBox" type="checkbox" onClick={() => this.changeSleep()}/>
           <span className="SliderCircle" />
         </label>
         

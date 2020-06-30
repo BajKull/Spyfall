@@ -1,0 +1,26 @@
+.Roles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.MarginTop10 {
+  margin-top: 25px;
+}
+
+.PlaceBorder {
+  border-bottom: 2px solid rgb(60, 60, 60);
+  font-size: 0.75em;
+}
+.RoleBorder {
+  border-bottom: 1px solid rgb(60, 60, 60);
+  font-size: 0.5em;
+}
+
+.Timer {
+  font-size: 2.5em;
+}

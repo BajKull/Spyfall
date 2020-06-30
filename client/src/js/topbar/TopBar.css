@@ -1,0 +1,10 @@
+.topBar {
+  border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+.topBar h1 {
+  text-align: center;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  margin-bottom: 0;
+}

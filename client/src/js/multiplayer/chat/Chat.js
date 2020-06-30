@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import Message from './Message.js'
 import User from './User.js'
+import './Chat.css'
+
 
 export class Chat extends Component {
   state = {

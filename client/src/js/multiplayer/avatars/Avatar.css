@@ -1,0 +1,83 @@
+.Avatars {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-flex;
+  overflow-x: auto;
+}
+
+.Avatars p {
+  min-width: 1px;
+}
+
+.Avatars::-webkit-scrollbar {
+  height: 10px;
+}
+
+.Avatars::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 80, 80);
+  border-radius: 5px;
+}
+
+.Avatars::-webkit-scrollbar-track-piece:end {
+  margin-right: 35%;
+  background: transparent;
+}
+
+.Avatars::-webkit-scrollbar-track-piece:start {
+  margin-left: 35%;
+  background: transparent;
+}
+
+.Avatar {
+  background: rgb(40, 40, 40);
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 25vh;
+  color: white;
+  font-size: 44px;
+  text-align: center;
+  margin: 20px;
+  word-wrap: break-word;
+  position: relative;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
+}
+
+.AvatarReady {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  background: rgb(31, 209, 102);
+  margin-top: 10px;
+  transition: 0.75s;
+  position: absolute;
+  bottom: 0px;
+}
+
+.AvatarReady2 {
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+  background: rgb(214, 118, 118);
+  margin-top: 10px;
+  transition: 0.75s;
+  position: absolute;
+  bottom: 0px;
+}
+
+.AvatarName {
+  background: rgb(40, 40, 40);
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+}
+
+.AvatarPromoted {
+  color: gold;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: 0;
+  font-size: 42px;
+  line-height: 0.5em;
+}

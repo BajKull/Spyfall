@@ -29,3 +29,22 @@
   opacity: 0.1;
   background: rgba(0, 0, 0, 0);
 }
+
+.SPIcon {
+  position: absolute;
+  left: 15px;
+  top: 25%;
+  height: 50%;
+  background: none;
+}
+
+.MenuWithLoading {
+  position: relative;
+}
+
+.LoadingIcon {
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: 25px;
+}

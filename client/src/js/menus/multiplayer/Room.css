@@ -1,0 +1,47 @@
+.Room {
+  width: 100%;
+}
+
+.Room1 {
+  width: 100%;
+  display: inline-flex;
+}
+
+.RoomTimer {
+  width: 100%;
+  display: inline-flex;
+}
+
+.RoomTimerRight {
+  width: 30%;
+  margin-top: 5vh;
+}
+
+.GamePlay h1 {
+  font-size: 0.75em;
+}
+
+.GamePlay h3 {
+  font-size: 0.5em;
+}
+
+
+.NickName {
+  background-color: rgb(70, 70, 70);
+  min-width: 30%;
+  color: white;
+  padding: 25px;
+  margin: 10px;
+  display: block;
+  border: 0;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 5vmin;
+  text-align: center;
+}
+
+.NickName::placeholder {
+  color: rgb(200, 200, 200);
+}
+
+/* Roobert,Helvetica Neue,Helvetica,Arial,sans-serif!important; */

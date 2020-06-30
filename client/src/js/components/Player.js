@@ -48,14 +48,14 @@ export class Player extends Component {
       <div className="Roles">
         
         {this.state.nextPhase ? 
-          <div className="Roles" style={{marginBottom: '5%'}}>
-            <h3 style={{marginBottom: '2%'}}> {this.props.getText("rolesAsigned")} </h3>
-            <button className="LightButton" onClick={this.props.startGame}> {this.props.getText("startGame")} </button>
+          <div className="Roles">
+            <h1 className="MarginTop1"> {this.props.getText("rolesAsigned")} </h1>
+            <button className="LightButton2" onClick={this.props.startGame}> {this.props.getText("startGame")} </button>
           </div> :
           <div className="Roles">
-            <h6> {this.props.getText("player")}: { this.state.player + 1 } </h6>
-            <h3> { this.state.place } </h3>
-            <h5> { this.state.role } </h5>
+            <h4 className="MarginTop1"> {this.props.getText("player")}: { this.state.player + 1 } </h4>
+            <h1 className="PlaceBorder"> { this.state.place } </h1>
+            <h2 className="RoleBorder"> { this.state.role } </h2>
             {this.state.nextPlayer ? 
               <button className="LightButton"  onClick={this.changeButton.bind(this)} > {this.props.getText("ok")} </button> :
               <button className="LightButton"  onClick={this.updateInfo.bind(this)} > {this.props.getText("showInfo")} </button>

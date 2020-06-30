@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import question from '../../icons/question.svg'
 import UIfx from 'uifx'
-import TimerEnd from '../../TimerEnd.mp3'
+import TimerEnd from './TimerEnd.mp3'
+import NoSleep from 'nosleep.js'
 
 const sound = new UIfx(
   TimerEnd,
@@ -9,6 +9,8 @@ const sound = new UIfx(
     volume: 0.4
   }
 )
+
+const noSleep = new NoSleep()
 
 export class Timer extends Component {
   state = {
@@ -19,6 +21,11 @@ export class Timer extends Component {
 
   componentDidMount() {
     const l = this.props.getGameLength()
+    const options = this.props.getOptions()
+    if(options.screenScleep)
+      noSleep.disable()
+      
+    sound.setVolume(options.soundVolume / 10)
     this.setState({
       minutes: l
     })
@@ -55,15 +62,11 @@ export class Timer extends Component {
   render() {
     return (
       <div className="GamePlay">
-        <h3> {this.props.getText("discussion")}: </h3>
+        <h3 className="MarginTop5"> {this.props.getText("discussion")}: </h3>
         {(this.state.minutes === 0 && this.state.seconds === 0) ?
-          <h1> {this.props.getText("over")} </h1> :
-          <h1> { this.state.minutes }:{ this.state.seconds < 10 ? ('0' + this.state.seconds) : this.state.seconds}</h1>
+          <h1 className="Timer"> {this.props.getText("over")} </h1> :
+          <h1 className="Timer"> { this.state.minutes }:{ this.state.seconds < 10 ? ('0' + this.state.seconds) : this.state.seconds}</h1>
         }
-        
-        <button className="MenuButton" style={{marginTop: '20vmin'}}onClick={this.props.newGame}> {this.props.getText("newGame")} </button>
-        <button className="MenuButton" onClick={() => this.props.btnChangeScreen("menu")}> {this.props.getText("mainMenu")} </button>
-        <img src={question} className="QuestionIcon" alt="?"></img>
       </div>
     )
   }
